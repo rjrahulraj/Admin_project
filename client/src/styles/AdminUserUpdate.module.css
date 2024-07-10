@@ -1,0 +1,99 @@
+/* General Styles */
+.UserUpdation {
+     margin: 2rem auto;
+     padding: 2rem;
+     max-width: 600px;
+     background-color: #f9f9f9;
+     border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .sectionHeading {
+     text-align: center;
+     margin-bottom: 1.5rem;
+     color: black;
+   }
+   
+   .formSection {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+   }
+   
+   .formSection > div {
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .formSection > div > label {
+     margin-bottom: 0.5rem;
+     font-size: 1rem;
+     font-weight: 600;
+     color: black;
+   }
+   
+   .formSection > div > input {
+     padding: 0.75rem;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 1rem;
+   }
+   
+   button {
+     padding: 0.75rem;
+     background-color: #007BFF;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     font-size: 1rem;
+     cursor: pointer;
+   }
+   
+   button:hover {
+     background-color: #0056b3;
+   }
+   
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+     .UserUpdation {
+       padding: 1rem;
+     }
+   
+     .formSection > div > input {
+       font-size: 0.9rem;
+     }
+   
+     button {
+       font-size: 0.9rem;
+     }
+   }
+   
+   @media (max-width: 480px) {
+     .UserUpdation {
+       margin: 1rem;
+       padding: 1rem;
+     }
+   
+     .sectionHeading h2 {
+       font-size: 1.5rem;
+     }
+   
+     .formSection {
+       gap: 0.75rem;
+     }
+   
+     .formSection > div > label {
+       font-size: 0.9rem;
+     }
+   
+     .formSection > div > input {
+       padding: 0.5rem;
+       font-size: 0.9rem;
+     }
+   
+     button {
+       padding: 0.5rem;
+       font-size: 0.9rem;
+     }
+   }
+   

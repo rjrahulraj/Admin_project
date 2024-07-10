@@ -1,0 +1,46 @@
+
+section {
+     padding: 20px;
+   }
+   
+   .servicePage {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     color: #121212;
+     gap: 20px;
+   }
+   .serviceHead{
+     text-align: start;
+     color: #121212;
+   }
+   
+   .serviceItem {
+     background-color: var(--btn-bg-color);
+     color: var(--text-color);
+     padding: 20px;
+     border-radius: 8px;
+     width: 300px; /* Fixed width for each service item */
+     box-sizing: border-box;
+     transition: transform 0.3s ease;
+     margin: 20px;
+   }
+   
+   .serviceItem:hover {
+     transform: translateY(-5px);
+   }
+   
+   .serviceItem h2 {
+     color: var(--primary-color);
+   }
+   
+   .serviceItem p {
+     color: var(--text-color);
+   }
+   
+   /* Responsive styles */
+   @media (max-width: 768px) {
+     .serviceItem {
+       width: 100%; /* Full width for smaller screens */
+     }
+   }

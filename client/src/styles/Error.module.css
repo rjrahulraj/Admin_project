@@ -1,0 +1,49 @@
+.errorPage {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #f0f0f0;
+   }
+   
+   .mainSection {
+     text-align: center;
+     background-color: #ffffff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+   .errorCode {
+     font-size: 6rem;
+     color: #e74c3c;
+     margin-bottom: 10px;
+   }
+   
+   .errMsg {
+     margin-bottom: 20px;
+   }
+   .errMsg >h3, p{
+     color: #121212;
+   }
+   
+   .Btn {
+     display: flex;
+     justify-content: center;
+   }
+   
+   .Btn button {
+     margin: 0 10px;
+     padding: 10px 20px;
+     background-color: #3498db;
+     color: #ffffff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .Btn button:hover {
+     background-color: #2980b9;
+   }
+   

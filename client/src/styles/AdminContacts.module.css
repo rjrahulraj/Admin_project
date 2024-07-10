@@ -1,0 +1,43 @@
+.heading {
+     padding: 20px;
+     text-align: center;
+     color: #121212;
+   }
+   
+   .AllMessage {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+     color: white;
+     /* padding: 20px; */
+   }
+   
+   .eachMessage {
+     background-color: var(--btn-bg-color);
+     color: var(--text-color);
+     padding: 20px;
+     border-radius: 8px;
+     width: 300px;
+     box-sizing: border-box;
+     color: white;
+   }
+
+   .eachMessage p { 
+      color: white;
+   }
+   
+   button {
+     background-color: var(--btn-bg-color);
+     color: var(--btn-text-color);
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin-top: 10px;
+     border: 2px solid wheat;
+   }
+   
+   button:hover {
+     background-color: var(--primary-color);
+   }

@@ -1,0 +1,65 @@
+
+.ServiceUpdateSection {
+     display: flex;
+     flex-direction: column;
+     /* align-items: start; */
+     /* padding: 20px; */
+
+   }
+
+   
+   
+   .heading {
+     /* text-align: center; */
+     padding: 10px;
+     color: #121212;
+
+   }
+
+   
+   
+   .UpdationformSection {
+     width: 100%;
+     max-width: 500px;
+     padding: 20px;
+     background-color: var(--btn-bg-color);
+     border-radius: 8px;
+     box-sizing: border-box;
+   }
+   
+   .UpdationformSection label {
+     display: block;
+     margin-bottom: 10px;
+   }
+   
+   .UpdationformSection input[type="text"],
+   .UpdationformSection textarea {
+     width: calc(100% - 20px);
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     background-color: var(--bg-color);
+     color: var(--text-color);
+     color: #121212;
+   }
+   
+   .UpdationformSection input[type="text"]:focus,
+   .UpdationformSection textarea:focus {
+     outline: none;
+     border-color: var(--primary-color);
+   }
+   
+   .UpdationformSection button {
+     background-color: var(--primary-color);
+     color: var(--btn-text-color);
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin-top: 10px;
+   }
+   
+   .UpdationformSection button:hover {
+     background-color: var(--secondary-color);
+   }

@@ -1,0 +1,136 @@
+/* Base styles */
+:root {
+     --bg-color: #121212;
+     --text-color: #ffffff;
+     --primary-color: #bb86fc;
+     --secondary-color: #03dac6;
+     --btn-bg-color: #333333;
+     --btn-text-color: #ffffff;
+   }
+   
+   body {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+     font-family: 'Arial', sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+   
+   section {
+     padding: 20px;
+   }
+   
+   .mainSection {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+   
+   .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+   }
+   
+   .leftPart {
+     flex: 1;
+     min-width: 300px;
+     padding: 20px;
+   }
+   
+   .leftPart h3, .leftPart h1, .leftPart p {
+     margin: 10px 0;
+     color: #1e1e1e;
+   }
+   
+   .leftPart h3 {
+     color: var(--primary-color);
+   }
+   
+   .leftPart h1 {
+     font-size: 2.5em;
+   }
+   
+   .leftPart p {
+     font-size: 1.1em;
+   }
+   
+   .Btn {
+     margin-top: 20px;
+   }
+   
+   .Btn button {
+     background-color: var(--btn-bg-color);
+     color: var(--btn-text-color);
+     border: none;
+     padding: 10px 20px;
+     margin: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     border-radius: 5px;
+   }
+   
+   .Btn button:hover {
+     background-color: var(--primary-color);
+   }
+   
+   .rightPart img {
+     max-width: 100%;
+     height: auto;
+   }
+   
+   .dataShare {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px;
+     background-color: #1e1e1e;
+     margin-top: 20px;
+     border-radius: 10px;
+     
+   }
+   
+   .dataShare div {
+     text-align: center;
+     padding: 10px;
+   }
+   
+   .dataShare p {
+     margin: 5px 0;
+     color: var(--text-color) !important;
+   }
+   
+   hr {
+     border: 1px solid var(--secondary-color);
+     height: 50px;
+   }
+   
+   /* Responsive styles */
+   @media (max-width: 768px) {
+     .container {
+       flex-direction: column;
+     }
+   
+     .leftPart h1 {
+       font-size: 2em;
+     }
+   
+     .Btn button {
+       width: 100%;
+       margin: 10px 0;
+     }
+   
+     .dataShare {
+       flex-direction: column;
+     }
+   
+     hr {
+       display: none;
+     }
+   }
+   
