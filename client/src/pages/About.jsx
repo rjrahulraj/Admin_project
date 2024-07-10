@@ -17,7 +17,7 @@ const About = () => {
          <main className={styles.mainSection}>
           <div className={styles.leftPart}>
               
-              <p>Welcome, {userData && userData.username} to Brand</p>
+              <p>Welcome, {userData && userData.username} to <span className={styles.BrandName}>TechVersity</span></p>
               <h1>why Choose us ?</h1>
               <p>Expertise : Our team consists of experience IT professionals who are passionate about staying up-to-date with latest Industry trends.</p>
               <p>Customization: We underStand that every business is unique. That&apos;s why we create solution that are tailored to your specific needs and goals.</p>

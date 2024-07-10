@@ -21,6 +21,10 @@
      margin: 0;
      padding: 0;
    }
+
+   .BrandName{
+    font-weight: 600;
+   }
   
    
    .mainSection {
