@@ -7,6 +7,8 @@ const AdminRouter = require('./admin-router');
 const errorMiddleware=require('../midllewares/error-middleware');
 const cors=require('cors');
 
+const port=process.env.PORT || 9001;
+
 const corseOption={
      origin:"http://localhost:5173",
      methods:"GET, POST, PUT, DELETE, HEAD,PATCH",
@@ -34,7 +36,7 @@ app.use('/about', (req,res)=>{
 app.use(errorMiddleware);
 
 connectDB().then(()=>{    
-app.listen(9001,()=>{
-     console.log("Server start at : 9001");
+app.listen(port,()=>{
+     console.log("Server start at : ", port);
 })
 })
