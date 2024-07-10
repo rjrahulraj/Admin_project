@@ -1,6 +1,5 @@
 const jwt=require('jsonwebtoken');
 const User=require('../utils/models/user-models');
-const { user } = require('../controllers/auth-controller');
 
 const authMiddlewares=async(req,res,next)=>{
      try {
@@ -14,9 +13,9 @@ const authMiddlewares=async(req,res,next)=>{
                {
                     token=token.replace("Bearer ","").trim();
                     let userData=await jwt.verify(token, process.env.JWT_SIGN_KEY);
-                    console.log(userData.email);
+                    // console.log(userData.email);
                userData=await User.findOne({email:userData.email}).select({password:0});
-                    console.log(userData);
+                    // console.log(userData);
                req.user=userData;
                req.token=token;
                req.userID=userData._id;

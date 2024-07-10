@@ -28,7 +28,7 @@ const deleteUser=async(req,res)=>{
           const {id}=req.body;
           
           let delUser=await User.deleteOne({id});
-          console.log(delUser, id);
+          // console.log(delUser, id);
           
           if(delUser.deletedCount===0)
           {
@@ -47,7 +47,7 @@ const getUserById=async(req,res)=>{
      try {
           let id=req.params.id;
           let UserDt=await User.findOne({_id:id}).select({password:0});
-          console.log(id);
+          // console.log(id);
           if(!UserDt)
           {
                res.status(400).json({message:"Failed to user Details"});
@@ -65,16 +65,16 @@ const UpdateUserById=async(req,res)=>{
      try {
           const id=req.params.id;
      const {email, phone, username}=req.body;
-     console.log(res.body);
+     // console.log(res.body);
 
      const updateDT=await User.updateOne({_id:id},{email:email,phone:phone,username:username});
-     console.log(updateDT);
+     // console.log(updateDT);
      if(updateDT.acknowledged)
      {
           res.status(200).json({message:"Update successful"});
      }
      else{
-               res.status(400).json({message:"Update unsuccessful"});
+          res.status(400).json({message:"Update unsuccessful"});
      }
      } catch (error) {
           console.log('Error at admin Controlles -UpdateUserById',error);
@@ -106,7 +106,7 @@ const deleteContactById=async(req,res)=>{
      try {
           const id=req.params.id;
           const deleteContact=await Contact.deleteOne({_id:id});
-          console.log(deleteContact);
+          // console.log(deleteContact);
           if(deleteContact.deletedCount===0)
           {
                res.status(200).json({message:"Message Deleted unsuccessful"});
@@ -163,7 +163,7 @@ const AddNewServices=async(req,res)=>{
           
           // console.log(service,description,price,provider); 
           let newServices=await Service.create({service,description,price,provider});
-          console.log(newServices);
+          // console.log(newServices);
           if(!newServices)
                {
                     res.status(403).json({message:"Service is not added"});
@@ -179,7 +179,7 @@ const deleteServiceById=async(req,res)=>{
      try {
           const id=req.params.id;
           let delSer=await Service.deleteOne({_id:id});
-          console.log(delSer);
+          // console.log(delSer);
 
           if(delSer.deletedCount==0)
                {
@@ -203,7 +203,7 @@ const UpdateServicesById=async (req,res)=>{
           
           let updSer=await Service.updateOne({_id:id},{service,description,price,provider});
           
-          console.log(updSer);
+          // console.log(updSer);
 
           if(updSer.modifiedCount===0)
           {

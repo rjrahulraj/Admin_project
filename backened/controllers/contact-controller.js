@@ -4,7 +4,7 @@ const contact=async (req,res)=>{
      try {
           const {username, email, message}=req.body;
           const contactDetails=await Contact.create({username, email, message});
-          console.log(contactDetails);
+          // console.log(contactDetails);
           res.status(200).send({msg:"Message is send succesfully"});
 
      } catch (error) {

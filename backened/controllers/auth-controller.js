@@ -43,7 +43,7 @@ const register=async(req,res)=>{
                          token:await userCreated.generateToken(),
                          userId:userCreated._id.toString(),
                     });
-               console.log(userCreated);
+               // console.log(userCreated);
           }
      }
      catch(e)
