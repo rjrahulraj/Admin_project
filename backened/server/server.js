@@ -10,13 +10,22 @@ const cors=require('cors');
 const port=process.env.PORT || 9001;
 
 const corseOption={
-     origin:"http://localhost:5173",
+     origin:"https://techversity.onrender.com",
      methods:"GET, POST, PUT, DELETE, HEAD,PATCH",
      credential:true
 }
 
 // tackling the cors policy
 app.use(cors(corseOption));
+
+// // Example of CORS headers in an Express.js server
+// app.use((req, res, next) => {
+//      res.header("Access-Control-Allow-Origin", "https://your-frontend-domain.com");
+//      res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+//      res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+//      next();
+//    });
+   
 
 app.use(express.json());
 
