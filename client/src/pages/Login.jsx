@@ -49,7 +49,7 @@ const Login = () => {
             setUserLogin(default_UserLogin);
             setLogged(true);
             navigate('/');
-            toast.success("Welcome to Brand", {
+            toast.success("Welcome to TechVersity", {
               position: "top-center",
               autoClose: 3000,
               hideProgressBar: false,

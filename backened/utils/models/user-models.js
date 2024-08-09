@@ -27,6 +27,8 @@ const userSchema=new mongoose.Schema({
 });
 
 // this pre methods run before new data is going to save. 
+// imp-note: always use async function and avoid callback function(it will give errror)/ 
+
 userSchema.pre('save', async function(next){
 
      const user=this;
@@ -48,6 +50,8 @@ userSchema.pre('save', async function(next){
 })
 
 // instance method  -we can create any  method 
+// note :-writing async function is important and  arrow function will not work.  
+//note :- these will run on query return from model 
 userSchema.methods.generateToken=async function()
 {
      try{

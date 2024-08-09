@@ -11,6 +11,7 @@ const Navbar = () => {
    const [reload, setReload]=useState(false);
    
    const toggleMenu = () => {
+    
        setMenuActive(!menuActive);
        
        if(menuActive===true)
@@ -59,9 +60,6 @@ const Navbar = () => {
                         <li>
                             <NavLink to="/services">Services</NavLink>
                         </li>
-                        
-                     
-
                         </>
                         
                     
